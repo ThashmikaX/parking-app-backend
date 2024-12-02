@@ -39,7 +39,7 @@ def detect_text_from_image(image, lang="eng"):
     # Preprocess the image for better OCR accuracy
     preprocessed_img = preprocess_image(image)
     # Configure Tesseract OCR
-    pytesseract.pytesseract.tesseract_cmd = r'C:\Users\sudesh_thashmika\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+    pytesseract.pytesseract.tesseract_cmd = r'tesseract'
     custom_config = r'--oem 3 --psm 7'  # OCR settings for a single line of text
     # Extract text
     text = pytesseract.image_to_string(preprocessed_img, config=custom_config, lang=lang)
