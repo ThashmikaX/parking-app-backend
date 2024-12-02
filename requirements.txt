@@ -6,3 +6,4 @@ pillow
 numpy
 cv2
 io
+opencv-python
