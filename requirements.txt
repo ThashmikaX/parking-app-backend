@@ -4,5 +4,4 @@ pytesseract
 uvicorn
 pillow
 numpy
-io
 opencv-python
